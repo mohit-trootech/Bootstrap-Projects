@@ -1,0 +1,10 @@
+/* Board CSS */
+#board {
+    grid-template-columns: repeat(3, 80px);
+    grid-row: 12px;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+}
