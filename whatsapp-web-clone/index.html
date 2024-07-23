@@ -18,205 +18,234 @@
 </head>
 
 <body data-bs-theme="dark">
-    <div class="main row">
-        <div class="sidebar-chat col-md-3 d-none d-sm-block container-fluid">
-            <nav class="navbar">
-                <div class="container my-auto">
-                    <a class="navbar-brand" href="#">
-                        <img src="./static/whatsapp.webp" class="rounded-circle object-fit-contain border my-auto"
-                            alt="whatsapp" width="32" height="32">
-                    </a>
-                    <ul class="list-group list-group-horizontal d-flex">
-                        <li class="list-group-item border-0"><button class="nav-btn border-0 bg-transparent"><i
-                                    class="fa fa-home"></i></button></li>
-                        <li class="list-group-item border-0"><button class="border-0 bg-transparent" id="themeIcon">
-                                <!-- Theme Toggle Start -->
-                                <div class="theme-toggle">
-                                    <label class="switch">
-                                        <input type="checkbox" name="theme" id="theme" checked />
-                                        <span class="slider"></span>
-                                    </label>
-                                </div>
-                                <!-- Theme Toggle End -->
-                            </button></li>
-                        <li class="list-group-item border-0 d-none d-lg-block"><button
-                                class="nav-btn border-0 bg-transparent"><i class="fa fa-ellipsis-vertical"></i></button>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="form-floating form-floating-sm mx-2 fw-lighter mb-3">
-                <input type="search" name="userSearch" id="userSearch" class="form-control rounded form-control-sm"
-                    placeholder="Search">
-                <label for="userSearch"><i class="fa fa-magnifying-glass"></i>
-                    Search</label>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item list-group-item list-group-item-secondary chat-navigation rounded-end">
-                    <div class="row">
-                        <div class="col-md-4 my-auto">
-                            <img src="./static/person.png"
-                                class="rounded-circle object-fit-contain border border-warning profile-img-chats"
-                                height="36" width="36" alt="./static/person.png">
-                            <span
-                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                99+
-                                <span class="visually-hidden">unread messages</span>
-                            </span>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="d-flex justify-content-between">
-                                <strong class="me-auto ellipsis">Ross Geller</strong>
-                                <small class="ellipsis">11 mins ago</small>
-                            </div>
-                            <div class="d-flex ellipsis">
-                                This is the Last Message
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="list-group-item chat-navigation rounded-end">
-                    <div class="row">
-                        <div class="col-md-4 my-auto">
-                            <img src="./static/person.png"
-                                class="rounded-circle object-fit-contain border border-warning profile-img-chats"
-                                height="36" width="36" alt="./static/person.png">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="d-flex justify-content-between">
-                                <strong class="me-auto ellipsis">Monika Geller</strong>
-                                <small class="ellipsis">11 mins ago</small>
-                            </div>
-                            <div class="d-flex ellipsis">
-                                This is the Last Message
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="list-group-item chat-navigation rounded-end">
-                    <div class="row">
-                        <div class="col-md-4 my-auto">
-                            <img src="./static/person.png"
-                                class="rounded-circle object-fit-contain border border-warning profile-img-chats"
-                                height="36" width="36" alt="./static/person.png">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="d-flex justify-content-between">
-                                <strong class="me-auto ellipsis">Rachael Green</strong>
-                                <small class="ellipsis">11 mins ago</small>
-                            </div>
-                            <div class="d-flex ellipsis">
-                                This is the Last Message
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="list-group-item chat-navigation rounded-end">
-                    <div class="row">
-                        <div class="col-md-4 my-auto">
-                            <img src="./static/person.png"
-                                class="rounded-circle object-fit-contain border border-warning profile-img-chats"
-                                height="36" width="36" alt="./static/person.png">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="d-flex justify-content-between">
-                                <strong class="me-auto ellipsis">Joey Tribbani</strong>
-                                <small class="ellipsis">11 mins ago</small>
-                            </div>
-                            <div class="d-flex ellipsis">
-                                This is the Last Message
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="list-group-item chat-navigation rounded-end">
-                    <div class="row">
-                        <div class="col-md-4 my-auto">
-                            <img src="./static/person.png"
-                                class="rounded-circle object-fit-contain border border-warning profile-img-chats"
-                                height="36" width="36" alt="./static/person.png">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="d-flex justify-content-between">
-                                <strong class="me-auto ellipsis">Chandler Bing</strong>
-                                <small class="ellipsis">11 mins ago</small>
-                            </div>
-                            <div class="d-flex ellipsis">
-                                This is the Last Message
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="list-group-item chat-navigation rounded-end">
-                    <div class="row">
-                        <div class="col-md-4 my-auto">
-                            <img src="./static/person.png"
-                                class="rounded-circle object-fit-contain border border-warning profile-img-chats"
-                                height="36" width="36" alt="./static/person.png">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="d-flex justify-content-between">
-                                <strong class="me-auto ellipsis">Phoebe Buffay</strong>
-                                <small class="ellipsis">11 mins ago</small>
-                            </div>
-                            <div class="d-flex ellipsis">
-                                This is the Last Message
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="col-md-6 col-sm-12">
-            <div class="card col-12">
-                <!-- Header -->
-                <div class="navbar card-header px-4">
-                    <div class="d-flex align-items-center">
-                        <img class="rounded-circle" src="./static/person.png" width="48" alt="Avatar">
-                        <div class="h6 ps-2 ms-1 mb-0">Ross Geller</div>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <div class="content">
-                        <div class="full-chat-block">
-                            <!-- Message Container -->
-                            <div class="outer-container">
-                                <div class="chat-container">
-                                    <!-- Messages -->
-                                    <div id="chatbox">
-                                        <h5 id="chat-timestamp" class="text-center"></h5>
-                                        <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+    <div class="container-fluid main">
+        <div class="row">
+            <div class="sidebar-chat col-md-4 d-none d-sm-block overflow-auto">
+                <nav class="navbar">
+                    <div class="container-fluid my-auto">
+                        <a class="navbar-brand" href="#">
+                            <img src="./static/whatsapp.webp"
+                                class="d-block rounded-circle object-fit-contain border my-auto" alt="whatsapp"
+                                width="32" height="32">
+                        </a>
+                        <ul class="list-group list-group-horizontal d-flex">
+                            <li class="list-group-item border-0"><button class="nav-btn border-0 bg-transparent"><i
+                                        class="fa fa-home"></i></button></li>
+                            <li class="list-group-item border-0"><button class="border-0 bg-transparent" id="themeIcon">
+                                    <!-- Theme Toggle Start -->
+                                    <div class="theme-toggle">
+                                        <label class="switch">
+                                            <input type="checkbox" name="theme" id="theme" checked />
+                                            <span class="slider"></span>
+                                        </label>
                                     </div>
-                                    <!-- User input box -->
-                                    <div class="chat-bar-input-block bg-secondary rounded">
-                                        <div id="userInput">
-                                            <div class="form-floating mb-3">
-                                                <input type="text" class="form-control" id="textInput"
-                                                    placeholder="Enter a Message">
-                                                <label for="textInput">Send a message</label>
+                                    <!-- Theme Toggle End -->
+                                </button></li>
+                            <li class="list-group-item border-0 d-none d-lg-block"><button
+                                    class="nav-btn border-0 bg-transparent"><i
+                                        class="fa fa-ellipsis-vertical"></i></button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="form-floating form-floating-sm mx-2 fw-lighter mb-3">
+                    <input type="search" name="userSearch" id="userSearch" class="form-control rounded form-control-sm"
+                        placeholder="Search">
+                    <label for="userSearch"><i class="fa fa-magnifying-glass"></i>
+                        Search</label>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item list-group-item list-group-item-secondary chat-navigation rounded m-2">
+                        <div class="row" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                            aria-controls="offcanvasExample">
+                            <div class="col-md-4 my-auto">
+                                <img src="./static/person.png"
+                                    class="rounded-circle object-fit-contain border border-warning profile-img-chats"
+                                    height="36" width="36" alt="./static/person.png">
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    99+
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="d-flex justify-content-between">
+                                    <strong class="me-auto ellipsis">Ross Geller</strong>
+                                    <small class="ellipsis">11 mins ago</small>
+                                </div>
+                                <div class="d-flex ellipsis">
+                                    This is the Last Message
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item chat-navigation rounded m-2">
+                        <div class="row">
+                            <div class="col-md-4 my-auto">
+                                <img src="./static/person.png"
+                                    class="rounded-circle object-fit-contain border border-warning profile-img-chats"
+                                    height="36" width="36" alt="./static/person.png">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="d-flex justify-content-between">
+                                    <strong class="me-auto ellipsis">Monika Geller</strong>
+                                    <small class="ellipsis">11 mins ago</small>
+                                </div>
+                                <div class="d-flex ellipsis">
+                                    This is the Last Message
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item chat-navigation rounded m-2">
+                        <div class="row">
+                            <div class="col-md-4 my-auto">
+                                <img src="./static/person.png"
+                                    class="rounded-circle object-fit-contain border border-warning profile-img-chats"
+                                    height="36" width="36" alt="./static/person.png">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="d-flex justify-content-between">
+                                    <strong class="me-auto ellipsis">Rachael Green</strong>
+                                    <small class="ellipsis">11 mins ago</small>
+                                </div>
+                                <div class="d-flex ellipsis">
+                                    This is the Last Message
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item chat-navigation rounded m-2">
+                        <div class="row">
+                            <div class="col-md-4 my-auto">
+                                <img src="./static/person.png"
+                                    class="rounded-circle object-fit-contain border border-warning profile-img-chats"
+                                    height="36" width="36" alt="./static/person.png">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="d-flex justify-content-between">
+                                    <strong class="me-auto ellipsis">Joey Tribbani</strong>
+                                    <small class="ellipsis">11 mins ago</small>
+                                </div>
+                                <div class="d-flex ellipsis">
+                                    This is the Last Message
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item chat-navigation rounded m-2">
+                        <div class="row">
+                            <div class="col-md-4 my-auto">
+                                <img src="./static/person.png"
+                                    class="rounded-circle object-fit-contain border border-warning profile-img-chats"
+                                    height="36" width="36" alt="./static/person.png">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="d-flex justify-content-between">
+                                    <strong class="me-auto ellipsis">Chandler Bing</strong>
+                                    <small class="ellipsis">11 mins ago</small>
+                                </div>
+                                <div class="d-flex ellipsis">
+                                    This is the Last Message
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item chat-navigation rounded m-2">
+                        <div class="row">
+                            <div class="col-md-4 my-auto">
+                                <img src="./static/person.png"
+                                    class="rounded-circle object-fit-contain border border-warning profile-img-chats"
+                                    height="36" width="36" alt="./static/person.png">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="d-flex justify-content-between">
+                                    <strong class="me-auto ellipsis">Phoebe Buffay</strong>
+                                    <small class="ellipsis">11 mins ago</small>
+                                </div>
+                                <div class="d-flex ellipsis">
+                                    This is the Last Message
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-8 col-sm-12">
+                <div class="card col-12">
+                    <!-- Header -->
+                    <div class="navbar card-header px-4">
+                        <div class="d-flex align-items-center">
+                            <img class="rounded-circle" src="./static/person.png" width="48" alt="Avatar">
+                            <div class="h6 ps-2 ms-1 mb-0">Ross Geller</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="content">
+                            <div class="full-chat-block">
+                                <!-- Message Container -->
+                                <div class="outer-container">
+                                    <div class="chat-container">
+                                        <!-- Messages -->
+                                        <div id="chatbox">
+                                            <h5 id="chat-timestamp" class="text-center"></h5>
+                                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                                        </div>
+                                        <!-- User input box -->
+                                        <div class="chat-bar-input-block bg-secondary rounded">
+                                            <div id="userInput">
+                                                <div class="form-floating mb-3">
+                                                    <input type="text" class="form-control" id="textInput"
+                                                        placeholder="Enter a Message">
+                                                    <label for="textInput">Send a message</label>
+                                                </div>
+                                            </div>
+                                            <div class="chat-bar-icons">
+                                                <i id="chat-icon" style="color: crimson;" class="fs-4 fa fa-heart"
+                                                    onclick="heartButton()"></i>
+                                                <i id="chat-icon" style="color: #333;" class="fs-4 fa fa-paper-plane"
+                                                    onclick="sendButton()"></i>
                                             </div>
                                         </div>
-                                        <div class="chat-bar-icons">
-                                            <i id="chat-icon" style="color: crimson;" class="fs-4 fa fa-heart"
-                                                onclick="heartButton()"></i>
-                                            <i id="chat-icon" style="color: #333;" class="fs-4 fa fa-paper-plane"
-                                                onclick="sendButton()"></i>
+                                        <div id="chat-bar-bottom">
+                                            <p></p>
                                         </div>
                                     </div>
-                                    <div id="chat-bar-bottom">
-                                        <p></p>
-                                    </div>
                                 </div>
-                            </div>
 
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-        <div class="sidebar-profile col-md-3 d-none d-sm-block">
-            <h1>Sidebar Profile</h1>
+    </div>
+    <!-- Profile Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="card border-0">
+                <img src="./static/person.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
         </div>
     </div>
 </body>

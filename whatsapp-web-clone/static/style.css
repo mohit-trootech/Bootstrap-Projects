@@ -4,10 +4,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    height: 100vh;
-    padding: 0 !important;
-    margin: 0 !important;
+body .main {
+    height: 100vh !important;
 }
 
 /* Text Overflow */
