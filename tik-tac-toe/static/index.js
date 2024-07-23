@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     playerOneElem = document.getElementById("player-one");
     playerTwoElem = document.getElementById("player-two");
     const playerOne = localStorage.playerone;
-    const playerTwo = localStorage.playerTwo;
+    const playerTwo = localStorage.playertwo;
     let moves = 0;
     loadPlayers();
     const cells = document.querySelectorAll('.cell');

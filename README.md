@@ -26,6 +26,8 @@ A collection of projects demonstrating various implementations using Bootstrap.
 
 1. Tik Tac Toe - [Stackblitz Live Demo](https://stackblitz.com/edit/stackblitz-starters-sbn2nj?file=user-form.html)
 
+2. Whatsapp Web UI - [Stackblitz Live Demo](https://stackblitz.com/edit/stackblitz-starters-2aa1t2?file=index.html)
+
 ### Setup
 
 Instructions to set up and run locally.
