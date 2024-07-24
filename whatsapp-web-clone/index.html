@@ -14,19 +14,20 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./static/style.css">
     <link rel="stylesheet" href="./static/chat.css">
-    <link rel="shortcut icon" href="./static/whatsapp.webp" type="image/x-icon">
+    <link rel="shortcut icon" href="./static/images/whatsapp.webp" type="image/x-icon">
 </head>
 
 <body data-bs-theme="dark">
     <div class="container-fluid main">
         <div class="row">
-            <div class="sidebar-chat col-md-4 d-none d-sm-block overflow-auto">
+            <div class="sidebar-chat col-md-4 overflow-auto offcanvas-sm offcanvas-start" id="chatsToggle"
+                aria-labelledby="chatsToggleLabel">
                 <nav class="navbar">
                     <div class="container-fluid my-auto">
                         <a class="navbar-brand" href="#">
-                            <img src="./static/whatsapp.webp"
-                                class="d-block rounded-circle object-fit-contain border my-auto" alt="whatsapp"
-                                width="32" height="32">
+                            <img src="./static/images/whatsapp.webp"
+                                class="d-block rounded-circle object-fit-cover border my-auto" alt="whatsapp" width="32"
+                                height="32">
                         </a>
                         <ul class="list-group list-group-horizontal d-flex">
                             <li class="list-group-item border-0"><button class="nav-btn border-0 bg-transparent"><i
@@ -41,9 +42,13 @@
                                     </div>
                                     <!-- Theme Toggle End -->
                                 </button></li>
-                            <li class="list-group-item border-0 d-none d-lg-block"><button
+                            <li class="list-group-item border-0 d-none d-md-block d-lg-block"><button
                                     class="nav-btn border-0 bg-transparent"><i
                                         class="fa fa-ellipsis-vertical"></i></button>
+                            </li>
+                            <li class="list-group-item border-0 d-md-none d-lg-none">
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    data-bs-target="#chatsToggle" aria-label="Close"></button>
                             </li>
                         </ul>
                     </div>
@@ -58,113 +63,143 @@
                     <li class="list-group-item list-group-item list-group-item-secondary chat-navigation rounded m-2">
                         <div class="row" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
                             aria-controls="offcanvasExample">
-                            <div class="col-md-4 my-auto">
-                                <img src="./static/person.png"
-                                    class="rounded-circle object-fit-contain border border-warning profile-img-chats"
-                                    height="36" width="36" alt="./static/person.png">
+                            <div class="col-md-4 col-lg-3 my-auto">
+                                <img src="./static/images/rachel.webp"
+                                    class="rounded-circle object-fit-cover border border-warning profile-img-chats"
+                                    height="36" width="36" alt="rachel">
                                 <span
                                     class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                                     99+
                                     <span class="visually-hidden">unread messages</span>
                                 </span>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-8 cold-lg-9">
                                 <div class="d-flex justify-content-between">
-                                    <strong class="me-auto ellipsis">Ross Geller</strong>
+                                    <strong class="me-auto ellipsis chat-username">Rachel Green</strong>
                                     <small class="ellipsis">11 mins ago</small>
                                 </div>
-                                <div class="d-flex ellipsis">
-                                    This is the Last Message
+                                <div class="d-flex ellipsis chat-last-message">
+                                    I don't Gossip !
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li class="list-group-item chat-navigation rounded m-2">
-                        <div class="row">
-                            <div class="col-md-4 my-auto">
-                                <img src="./static/person.png"
-                                    class="rounded-circle object-fit-contain border border-warning profile-img-chats"
-                                    height="36" width="36" alt="./static/person.png">
+                    <li class="list-group-item list-group-item  chat-navigation rounded m-2">
+                        <div class="row" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                            aria-controls="offcanvasExample">
+                            <div class="col-md-4 col-lg-3 my-auto">
+                                <img src="./static/images/ross.jpeg"
+                                    class="rounded-circle object-fit-cover border border-warning profile-img-chats"
+                                    height="36" width="36" alt="ross">
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    99+
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-8 cold-lg-9">
                                 <div class="d-flex justify-content-between">
-                                    <strong class="me-auto ellipsis">Monika Geller</strong>
+                                    <strong class="me-auto ellipsis chat-username">Ross Geller</strong>
                                     <small class="ellipsis">11 mins ago</small>
                                 </div>
-                                <div class="d-flex ellipsis">
-                                    This is the Last Message
+                                <div class="d-flex ellipsis chat-last-message">
+                                    We were on Break!
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li class="list-group-item chat-navigation rounded m-2">
-                        <div class="row">
-                            <div class="col-md-4 my-auto">
-                                <img src="./static/person.png"
-                                    class="rounded-circle object-fit-contain border border-warning profile-img-chats"
-                                    height="36" width="36" alt="./static/person.png">
+                    <li class="list-group-item list-group-item  chat-navigation rounded m-2">
+                        <div class="row" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                            aria-controls="offcanvasExample">
+                            <div class="col-md-4 col-lg-3 my-auto">
+                                <img src="./static/images/monica.webp"
+                                    class="rounded-circle object-fit-cover border border-warning profile-img-chats"
+                                    height="36" width="36" alt="monica">
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    99+
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-8 cold-lg-9">
                                 <div class="d-flex justify-content-between">
-                                    <strong class="me-auto ellipsis">Rachael Green</strong>
+                                    <strong class="me-auto ellipsis chat-username">Monica Geller</strong>
                                     <small class="ellipsis">11 mins ago</small>
                                 </div>
-                                <div class="d-flex ellipsis">
-                                    This is the Last Message
+                                <div class="d-flex ellipsis chat-last-message">
+                                    Not just clean "Monika" clean !
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li class="list-group-item chat-navigation rounded m-2">
-                        <div class="row">
-                            <div class="col-md-4 my-auto">
-                                <img src="./static/person.png"
-                                    class="rounded-circle object-fit-contain border border-warning profile-img-chats"
-                                    height="36" width="36" alt="./static/person.png">
+                    <li class="list-group-item list-group-item  chat-navigation rounded m-2">
+                        <div class="row" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                            aria-controls="offcanvasExample">
+                            <div class="col-md-4 col-lg-3 my-auto">
+                                <img src="./static/images/joey.jpg"
+                                    class="rounded-circle object-fit-cover border border-warning profile-img-chats"
+                                    height="36" width="36" alt="joey">
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    99+
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-8 cold-lg-9">
                                 <div class="d-flex justify-content-between">
-                                    <strong class="me-auto ellipsis">Joey Tribbani</strong>
+                                    <strong class="me-auto ellipsis chat-username">Joey Tribanni</strong>
                                     <small class="ellipsis">11 mins ago</small>
                                 </div>
-                                <div class="d-flex ellipsis">
-                                    This is the Last Message
+                                <div class="d-flex ellipsis chat-last-message">
+                                    Joey doesn't Share Food!
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li class="list-group-item chat-navigation rounded m-2">
-                        <div class="row">
-                            <div class="col-md-4 my-auto">
-                                <img src="./static/person.png"
-                                    class="rounded-circle object-fit-contain border border-warning profile-img-chats"
-                                    height="36" width="36" alt="./static/person.png">
+                    <li class="list-group-item list-group-item  chat-navigation rounded m-2">
+                        <div class="row" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                            aria-controls="offcanvasExample">
+                            <div class="col-md-4 col-lg-3 my-auto">
+                                <img src="./static/images/phoebe.jpg"
+                                    class="rounded-circle object-fit-cover border border-warning profile-img-chats"
+                                    height="36" width="36" alt="phoebe">
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    99+
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-8 cold-lg-9">
                                 <div class="d-flex justify-content-between">
-                                    <strong class="me-auto ellipsis">Chandler Bing</strong>
+                                    <strong class="me-auto ellipsis chat-username">Phoebe Buffay</strong>
                                     <small class="ellipsis">11 mins ago</small>
                                 </div>
-                                <div class="d-flex ellipsis">
-                                    This is the Last Message
+                                <div class="d-flex ellipsis chat-last-message">
+                                    He is her Lobster!
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li class="list-group-item chat-navigation rounded m-2">
-                        <div class="row">
-                            <div class="col-md-4 my-auto">
-                                <img src="./static/person.png"
-                                    class="rounded-circle object-fit-contain border border-warning profile-img-chats"
-                                    height="36" width="36" alt="./static/person.png">
+                    <li class="list-group-item list-group-item  chat-navigation rounded m-2">
+                        <div class="row" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                            aria-controls="offcanvasExample">
+                            <div class="col-md-4 col-lg-3 my-auto">
+                                <img src="./static/images/chandler.webp"
+                                    class="rounded-circle object-fit-cover border border-warning profile-img-chats"
+                                    height="36" width="36" alt="./static/images/rachel.webp">
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    99+
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-8 cold-lg-9">
                                 <div class="d-flex justify-content-between">
-                                    <strong class="me-auto ellipsis">Phoebe Buffay</strong>
+                                    <strong class="me-auto ellipsis chat-username">Chandller Bing</strong>
                                     <small class="ellipsis">11 mins ago</small>
                                 </div>
-                                <div class="d-flex ellipsis">
-                                    This is the Last Message
+                                <div class="d-flex ellipsis chat-last-message">
+                                    I am Chanandler Bong, I make fun when i am nervous !
                                 </div>
                             </div>
                         </div>
@@ -176,9 +211,14 @@
                     <!-- Header -->
                     <div class="navbar card-header px-4">
                         <div class="d-flex align-items-center">
-                            <img class="rounded-circle" src="./static/person.png" width="48" alt="Avatar">
-                            <div class="h6 ps-2 ms-1 mb-0">Ross Geller</div>
+                            <img class="rounded-circle" src="./static/images/rachel.webp" width="48" height="48"
+                                alt="Avatar">
+                            <div class="h6 ps-2 ms-1 mb-0">Rachel Green</div>
                         </div>
+                        <button class="d-lg-none d-md-none btn btn-primary text-light" data-bs-toggle="offcanvas"
+                            data-bs-target="#chatsToggle" aria-controls="chatsToggle">
+                            <span class="nav-chat-toggle"><i class="fa-solid fa-sliders"></i></span>
+                        </button>
                     </div>
                     <div class="card-body">
                         <div class="content">
@@ -224,15 +264,19 @@
     <!-- Profile Offcanvas -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Profile</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
+        <div class="offcanvas-body text-center">
             <div class="card border-0">
-                <img src="./static/person.png" class="card-img-top" alt="...">
+                <img src="./static/images/chandler.webp"
+                    class="rounded-circle object-fit-cover border border-warning imageOffcanvas mx-auto" height="256"
+                    width="256" alt="./static/images/rachel.webp">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    <h5 class="card-title usernameOffcanvas">Card title</h5>
+                    <p class="card-text lastMessageOffcanvas">Some quick example text to build on the card title and
+                        make
+                        up the bulk of the
                         card's
                         content.</p>
                 </div>
@@ -264,5 +308,6 @@
 <script src="./static/theme.js"></script>
 <script src="./static/response.js"></script>
 <script src="./static/chat.js"></script>
+<script src="./static/profile.js"></script>
 
 </html>
